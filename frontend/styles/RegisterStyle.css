@@ -1,0 +1,39 @@
+* {
+  margin: 0%;
+  padding: 0%;
+  box-sizing: border-box;
+  color: #e0e0e0;
+  font-family: "Mulish";
+  font-weight: normal;
+}
+
+body {
+  background-image: linear-gradient(
+    to bottom,
+    #33383d,
+    #2d3136,
+    #272a2e,
+    #222327,
+    #1c1d20
+  );
+  display: flex;
+}
+
+.register_body {
+  display: flex;
+  height: 100%;
+}
+
+.container_register {
+  flex: 1;
+  
+}
+.form_register{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.img_register {
+  flex: 1;
+}
