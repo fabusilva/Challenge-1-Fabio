@@ -19,22 +19,29 @@
           <h1>Welcome,</h1>
           <p>To continue browsing safely, log in to the <br />network.</p>
         </div>
-        <div>
+        <div class="formulario">
           <h3>Login</h3>
           <div class="use_name">
-            <input type="email" placeholder="use name" />
-            <img src="../image/login/icon/icon-user.svg" alt="icon use" />
+            <input class="input_form" type="email" placeholder="use name" />
+            <img
+              class="icon"
+              src="../image/login/icon/icon-user.svg"
+              alt="icon use"
+            />
           </div>
           <div class="password">
-            <input type="password" placeholder="password" />
+            <input class="input_form" type="password" placeholder="password" />
             <img
+              class="icon"
               src="../image/login/icon/icon-password.svg"
               alt="icon password"
             />
           </div>
-          <p>Wow, invalid username or password.<br />Please, try again!</p>
-          <button>Login in</button>
-          <button>Register now</button>
+          <div class="message">
+              <p>Wow, invalid username or password.<br />Please, try again!</p>
+          </div>
+          <button class="button">Login in</button>
+          <button class="button" onclick="mudarPage()">Register now</button>
         </div>
       </div>
       <div class="img_page">
@@ -47,4 +54,5 @@
       </div>
     </div>
   </body>
+  <script src="../js/Login.js"></script>
 </html>
