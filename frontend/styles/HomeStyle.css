@@ -1,0 +1,115 @@
+* {
+  margin: 0%;
+  padding: 0%;
+  box-sizing: border-box;
+  font-family: 'Roboto';
+}
+body{
+  width: 1920px;
+  height: 1080px;
+}
+.home_navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo_navbar img {
+  width: 150px;
+  height: 42.75px;
+  margin-top: 25px;
+  margin-left: 40px;
+}
+.relogio{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.relogio h1{
+    font-size: 144px;
+    font-weight: 700;
+}
+.relogio p{
+    font-size: 14px;
+    font-weight: 400;
+}
+
+.tempo{
+  margin-right: 41px;
+}
+.temperatura{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.temperatura img{
+  width: 34px;
+  height: 34px;
+}
+.temperatura h1{
+  font-size: 48px;
+  font-weight: 700;
+
+}
+
+.home_body{
+  flex: 1;
+  display: flex;
+}
+
+.logo_body{
+  flex: 1;
+  margin-top: 63px;
+}
+
+.text_body{
+  margin-top: 166px;
+  margin-right: 134px;
+  text-align: right;
+}
+
+.fist_text{
+  color: #C12D18;
+  font-size: 36px;
+  font-weight: 700;
+  margin-bottom: 3px;
+}
+
+.pt_text{
+  color: #222222;
+  font-size: 24px;
+  font-weight: 400;
+  margin-bottom: 22px;
+}
+
+.en_text{
+  color: #C12D18;
+  font-size: 64px;
+  font-weight: 700;
+  margin-bottom: 8px;
+}
+
+.home_footer{
+  display: flex;
+  align-items: center;
+  background-image: linear-gradient(to top, #212221, #1f2120, #1d2020, #1c1f20, #1c1d20);
+  height: 100px;
+  width: 100%;
+  color: #FFFFFF;
+}
+
+.text_one{
+  font-size: 12px;
+  font-weight: 400;
+  text-align: right;
+  margin-left: 360px;
+  margin-right: 19px;
+}
+
+.text_two{
+  font-size: 14px;
+  font-weight: 400;
+  margin-left: 123px;
+  margin-right: 33px;
+}

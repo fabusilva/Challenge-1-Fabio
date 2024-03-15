@@ -14,42 +14,61 @@
   </head>
   <body>
     <div class="register_body">
-      <div class = "container_register">
+      <div class="container_register">
         <div class="text_register">
           <h1>Welcome,</h1>
           <p>Please, register to continue</p>
         </div>
         <form class="form_register" action="">
-          <label for="fistname">first name</label>
-          <input id="fistname" type="text" placeholder="Your first name" />
-  
-          <label for="lastname">last name</label>
-          <input id="lastname" type="text" placeholder="Your last name" />
-  
-          <label for="birthdate">birth date</label>
-          <input id="birthdate" type="date" placeholder="MM/DD/YYYY" />
-  
-          <label for="country">Country</label>
-          <input id="country" type="text" placeholder="Your Country" />
-  
-          <label for="city">City</label>
-          <input id="city" type="text" placeholder="Your City" />
-  
-          <label for="e-mail">e-mail</label>
-          <input id="e-mail" type="email" placeholder="A valid e-mail here" />
-  
-          <label for="password">password</label>
-          <input id="password" type="password" placeholder="Your password" />
-  
-          <label for="password2">password</label>
-          <input
-            id="password2"
-            type="password"
-            placeholder="Comfirm your password"
-          />
-  
-          <button type="submit">Register Now</button>
-          <p>Already have an account? <a href="./Login.html">Log in here.</a></p>
+          <div class="input_container">
+            <label for="fistname">first name</label>
+            <input id="fistname" type="text" placeholder="Your first name" />
+          </div>
+
+          <div class="input_container">
+            <label for="lastname">last name</label>
+            <input id="lastname" type="text" placeholder="Your last name" />
+          </div>
+
+          <div class="input_container">
+            <label for="birthdate">birth date</label>
+            <input id="birthdate" type="date" placeholder="MM/DD/YYYY" />
+          </div>
+          <div class="input_container">
+            <label for="country">Country</label>
+            <input id="country" type="text" placeholder="Your Country" />
+          </div>
+          <div class="input_container">
+            <label for="city">City</label>
+            <input id="city" type="text" placeholder="Your City" />
+          </div>
+
+          <div class="input_container">
+            <label for="e-mail">e-mail</label>
+            <input id="e-mail" type="email" placeholder="A valid e-mail here" />
+          </div>
+
+          <div class="input_container">
+            <label for="password">password</label>
+            <input id="password" type="password" placeholder="Your password" />
+          </div>
+
+          <div class="input_container">
+            <label for="password2">password</label>
+            <input
+              id="password2"
+              type="password"
+              placeholder="Comfirm your password"
+            />
+          </div>
+
+          <button class="bt_register" type="submit">Register Now</button>
+          <p>
+            Already have an account?
+            <a href="./Login.html"
+              ><strong>Log in here.</strong></a
+            >
+          </p>
         </form>
       </div>
     </div>
