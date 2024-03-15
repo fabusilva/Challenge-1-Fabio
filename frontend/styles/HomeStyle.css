@@ -7,17 +7,18 @@
 body{
   width: 1920px;
   height: 1080px;
+  background-image: linear-gradient(to top, #ffffff, #fbfbfb, #f7f7f7, #f4f4f4, #f0f0f0);
 }
 .home_navbar {
   display: flex;
   justify-content: space-between;
-  align-items: center;
 }
-
+.logo_navbar{
+  margin-top: 25px;
+}
 .logo_navbar img {
   width: 150px;
   height: 42.75px;
-  margin-top: 25px;
   margin-left: 40px;
 }
 .relogio{
@@ -36,6 +37,7 @@ body{
 }
 
 .tempo{
+  margin-top: 25px;
   margin-right: 41px;
 }
 .temperatura{
@@ -103,13 +105,50 @@ body{
   font-size: 12px;
   font-weight: 400;
   text-align: right;
-  margin-left: 360px;
-  margin-right: 19px;
+  margin-left: 370px;
+  margin-right: 29px;
 }
 
 .text_two{
   font-size: 14px;
   font-weight: 400;
-  margin-left: 123px;
+  margin-left: 223px;
   margin-right: 33px;
+  text-align: right;
+}
+
+.aux{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-right: 379px;
+}
+.aux h2{
+  font-size: 48px;
+  font-weight: 700;
+}
+
+.aux p{
+  font-size: 14px;
+  font-weight: 400;
+}
+.bt_cn{
+  width: 131px;
+  height: 99px;
+  font-size: 12px;
+  font-weight: 400;
+  background: #FFFFFF;
+  border:none;
+  color: #C13216;
+}
+
+.bt_logout{
+  width: 131px;
+  height: 99px;
+  font-size: 12px;
+  font-weight: 400;
+  color: #FFFFFF;
+  border:none;
+  background-image: linear-gradient(to top, #212221, #1f2120, #1d2020, #1c1f20, #1c1d20);
 }
