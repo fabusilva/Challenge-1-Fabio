@@ -91,6 +91,7 @@ body {
   margin-top: 15px;
   margin-bottom: 48px;
   margin-left: 333px;
+  visibility: hidden;
 }
 .message p {
   text-align: center;
