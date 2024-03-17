@@ -11,44 +11,34 @@ body {
   height: 1080px;
   background-image: linear-gradient(to bottom,#33383d,#2d3136,#272a2e,#222327,#1c1d20);
 }
-.container_login {
+.container {
   display: flex;
   
 }
-.form_login {
+.container_login {
   flex: 1;
 }
 .formulario {
   display: flex;
-  justify-content: center;
-  align-items: center;
   flex-direction: column;
 }
-
-.titlulo {
-  text-align: left;
-}
-.titulo h3 {
-  text-align: left;
-  font-size: 30px;
-}
-.header_login {
-  display: flex;
-  justify-content: center;
-  align-items: center;
+.header_formulario {
   flex-direction: column;
-  text-align: left;
+  margin-left: 287px;
   margin-top: 197px;
   margin-bottom: 97px;
 }
-.header_login h1 {
+.header_formulario h1 {
   font-size: 60px;
 }
-.header_login p {
+.header_formulario p {
   margin-top: 18px;
   font-size: 16px;
 }
-
+.formulario h3 {
+  margin-left: 287px;
+  font-size: 30px;
+}
 .input_form {
   height: 60px;
   width: 379px;
@@ -57,6 +47,7 @@ body {
   background: none;
   margin-top: 33px;
   margin-right: 20px;
+  margin-left: 287px;
   padding-right: 20px;
   vertical-align: baseline;
   padding: 20px;
@@ -69,6 +60,7 @@ body {
   background: none;
   margin-top: 33px;
   margin-right: 20px;
+  margin-left: 287px;
   padding-right: 20px;
   vertical-align: baseline;
   padding: 20px;
@@ -84,6 +76,7 @@ body {
   background: none;
   margin-top: 33px;
   margin-right: 20px;
+  margin-left: 287px;
   padding-right: 20px;
   vertical-align: baseline;
   padding: 20px;
@@ -97,8 +90,9 @@ body {
   align-items: center;
   margin-top: 15px;
   margin-bottom: 48px;
+  margin-left: 333px;
 }
-.formulario p {
+.message p {
   text-align: center;
   color: #e9b425;
 }
@@ -119,22 +113,23 @@ body {
   font-size: 32px;
   font-weight: 700;
   margin-bottom: 20px;
+  margin-left: 285px;
 }
-.img_page {
+.container_img {
   flex: 1;
 }
 
-.pc_img img {
+.img_backgroung img {
   max-width: 100%;
   max-height: 100%;
   
 }
-.logo_img {
+.logo_uol {
   display: flex;
   align-items: flex-start;
   justify-content: center;
 }
-.logo_img img {
+.logo_uol img {
   position: absolute;
   top: 11px;
   height: 66px;

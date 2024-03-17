@@ -6,8 +6,9 @@
   font-family: "Mulish";
   font-weight: normal;
 }
-
 body {
+  width: 1920px;
+  height: 1080px;
   background-image: linear-gradient(
     to bottom,
     #33383d,
@@ -16,50 +17,49 @@ body {
     #222327,
     #1c1d20
   );
-  display: flex;
-  width: 1920px;
-  height: 1080px;
 }
-
-.register_body {
+.container {
   display: flex;
 }
-
-.container_register {
+.container_login {
   flex: 1;
-  margin-right: 196px;
-  
 }
-
-.text_register{
-  margin-top: 94px;
-  margin-left: 296px;
-  margin-bottom: 73px;
-  font-weight: 400;
-}
-.text_register h1{
-  font-size: 60px;
-}
-.text_register p{
-  font-size: 16px;
-}
-.form_register{
+.formulario {
   display: flex;
   flex-direction: column;
-  justify-content: center;
-  align-items: center;
+  margin-left: 296px;
+  margin-top: 94px;
+}
+.header_formulario {
+  flex-direction: column;
+  margin-bottom: 73px;
+}
+.header_formulario h1 {
+  font-size: 60px;
+}
+.header_formulario p {
+  font-size: 16px;
 }
 
-.input_container{
+.input_container {
   margin-bottom: 18px;
 }
-
-.input_container label{
+.input_container label {
   font-size: 16px;
+}
+.label_espacamento {
   margin-right: 18px;
 }
-
-.input_container input{
+.label_espacamento2 {
+  margin-right: 31px;
+}
+.label_espacamento3 {
+  margin-right: 61px;
+}
+.label_espacamento4 {
+  margin-right: 45px;
+}
+.input_container input {
   height: 60px;
   width: 379px;
   border-radius: 50px;
@@ -69,43 +69,124 @@ body {
   padding-top: 23px;
   padding-bottom: 22px;
   color: rgba(224, 224, 224, 1);
-  border: #FFFFFF solid 1px;
+  border: #ffffff solid 1px;
 }
-.bt_register{
-  margin-top: 96px;
+.bt_submit {
+  margin-top: 78px;
   margin-bottom: 4px;
+  margin-left: 37px;
   width: 379px;
   height: 67px;
   border-radius: 50px;
   font-size: 32px;
   font-weight: 700;
-  background: linear-gradient(to top, #ff2d04, #ef2f0b, #e03110, #d03213, #c13216);
-  border: solid 1px linear-gradient(to top, #ff2d04, #ef2f0b, #e03110, #d03213, #c13216);
+  background: linear-gradient(
+    to top,
+    #ff2d04,
+    #ef2f0b,
+    #e03110,
+    #d03213,
+    #c13216
+  );
+  border: solid 1px
+    linear-gradient(to top, #ff2d04, #ef2f0b, #e03110, #d03213, #c13216);
 }
-.form_register p{
+.container_message {
+  margin-left: 378px;
+  display: flex;
+  align-items: center;
+}
+.text_message {
   color: rgba(242, 46, 7, 1);
   font-size: 16px;
   font-weight: 700;
+  display: inline-block;
 }
-.form_register p a{
+.text_link {
+  color: #f22e07;
   text-decoration: none;
-  color: #F22E07;
   font-size: 16px;
   font-weight: 700;
+  display: inline-block;
 }
-.img_register {
+.input_form {
+  height: 60px;
+  width: 379px;
+  border-radius: 50px;
+  border: 1px solid rgba(255, 255, 255, 1);
+  background: none;
+  margin-top: 33px;
+  margin-right: 20px;
+  margin-left: 287px;
+  padding-right: 20px;
+  vertical-align: baseline;
+  padding: 20px;
+}
+.input_icon_user {
+  height: 60px;
+  width: 379px;
+  border-radius: 50px;
+  border: 1px solid rgba(255, 255, 255, 1);
+  background: none;
+  margin-top: 33px;
+  margin-right: 20px;
+  margin-left: 287px;
+  padding-right: 20px;
+  vertical-align: baseline;
+  padding: 20px;
+  background-image: url("../image/login/icon/icon-user.svg");
+  background-repeat: no-repeat;
+  background-position: calc(100% - 10px) center;
+}
+.input_icon_password {
+  height: 60px;
+  width: 379px;
+  border-radius: 50px;
+  border: 1px solid rgba(255, 255, 255, 1);
+  background: none;
+  margin-top: 33px;
+  margin-right: 20px;
+  margin-left: 287px;
+  padding-right: 20px;
+  vertical-align: baseline;
+  padding: 20px;
+  background-image: url("../image/login/icon/icon-password.svg");
+  background-repeat: no-repeat;
+  background-position: calc(100% - 10px) center;
+}
+.button {
+  background-image: linear-gradient(
+    to top,
+    #ff2d04,
+    #ef2f0b,
+    #e03110,
+    #d03213,
+    #c13216
+  );
+  border: solid 2px
+    linear-gradient(to top, #ff2d04, #ef2f0b, #e03110, #d03213, #c13216);
+  width: 379px;
+  height: 67px;
+  border-radius: 50px;
+  font-size: 32px;
+  font-weight: 700;
+  margin-bottom: 20px;
+  margin-left: 285px;
+}
+.container_img {
   flex: 1;
 }
-.pc_img img {
+
+.img_backgroung img {
   max-width: 100%;
   max-height: 100%;
 }
-.logo_img {
+.logo_uol {
   display: flex;
   align-items: flex-start;
   justify-content: center;
 }
-.logo_img img {
+.logo_uol img {
   position: absolute;
   top: 11px;
   height: 66px;
