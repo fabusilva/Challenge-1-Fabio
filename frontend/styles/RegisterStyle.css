@@ -6,6 +6,9 @@
   font-family: "Mulish";
   font-weight: normal;
 }
+* a{
+  color: #f22e07;
+}
 body {
   width: 1920px;
   height: 1080px;
@@ -72,7 +75,7 @@ body {
   border: #ffffff solid 1px;
 }
 .bt_submit {
-  margin-top: 78px;
+  margin-top: 68px;
   margin-bottom: 4px;
   margin-left: 37px;
   width: 379px;
@@ -91,87 +94,28 @@ body {
   border: solid 1px
     linear-gradient(to top, #ff2d04, #ef2f0b, #e03110, #d03213, #c13216);
 }
-.container_message {
-  margin-left: 378px;
-  display: flex;
-  align-items: center;
+.container_message{
+  margin-left: 100px;
+}
+.erro_msg{
+  color: rgba(242, 46, 7, 1);
+  font-size: 20px;
+  font-weight: 700;
+  visibility: hidden;
 }
 .text_message {
+  margin-left: 378px;
   color: rgba(242, 46, 7, 1);
   font-size: 16px;
   font-weight: 700;
-  display: inline-block;
+  
 }
 .text_link {
   color: #f22e07;
   text-decoration: none;
   font-size: 16px;
-  font-weight: 700;
-  display: inline-block;
-}
-.input_form {
-  height: 60px;
-  width: 379px;
-  border-radius: 50px;
-  border: 1px solid rgba(255, 255, 255, 1);
-  background: none;
-  margin-top: 33px;
-  margin-right: 20px;
-  margin-left: 287px;
-  padding-right: 20px;
-  vertical-align: baseline;
-  padding: 20px;
-}
-.input_icon_user {
-  height: 60px;
-  width: 379px;
-  border-radius: 50px;
-  border: 1px solid rgba(255, 255, 255, 1);
-  background: none;
-  margin-top: 33px;
-  margin-right: 20px;
-  margin-left: 287px;
-  padding-right: 20px;
-  vertical-align: baseline;
-  padding: 20px;
-  background-image: url("../image/login/icon/icon-user.svg");
-  background-repeat: no-repeat;
-  background-position: calc(100% - 10px) center;
-}
-.input_icon_password {
-  height: 60px;
-  width: 379px;
-  border-radius: 50px;
-  border: 1px solid rgba(255, 255, 255, 1);
-  background: none;
-  margin-top: 33px;
-  margin-right: 20px;
-  margin-left: 287px;
-  padding-right: 20px;
-  vertical-align: baseline;
-  padding: 20px;
-  background-image: url("../image/login/icon/icon-password.svg");
-  background-repeat: no-repeat;
-  background-position: calc(100% - 10px) center;
-}
-.button {
-  background-image: linear-gradient(
-    to top,
-    #ff2d04,
-    #ef2f0b,
-    #e03110,
-    #d03213,
-    #c13216
-  );
-  border: solid 2px
-    linear-gradient(to top, #ff2d04, #ef2f0b, #e03110, #d03213, #c13216);
-  width: 379px;
-  height: 67px;
-  border-radius: 50px;
-  font-size: 32px;
-  font-weight: 700;
-  margin-bottom: 20px;
-  margin-left: 285px;
+  font-weight: bolder;
+  
 }
 .container_img {
   flex: 1;

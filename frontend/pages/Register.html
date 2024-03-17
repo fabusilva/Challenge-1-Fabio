@@ -15,7 +15,7 @@
   <body>
     <div class="container">
       <div class="container_login">
-        <form class="formulario">
+        <form id="formulario" class="formulario">
           <div class="header_formulario">
             <h1>Welcome,</h1>
             <p>Please, register to continue</p>
@@ -45,7 +45,7 @@
 
           <div class="input_container">
             <label class="label_espacamento4" for="e-mail">e-mail</label>
-            <input id="e-mail" type="email" placeholder="A valid e-mail here" />
+            <input id="email" type="email" placeholder="A valid e-mail here" />
           </div>
 
           <div class="input_container">
@@ -61,13 +61,12 @@
               placeholder="Comfirm your password"
             />
           </div>
-
+          <div class="container_message">
+            <p id="erro_form" class="erro_msg">All form fields must be filled in</p>
+          </div>
           <button class="bt_submit" type="submit">Register Now</button>
         </form>
-        <div class="container_message">
-          <p class="text_message">Already have an account? </p>
-          <a class="text_link" href="./Login.html"><strong>Log in here.</strong></a>
-        </div>
+        <span class="text_message">Already have an account? <a class="text_link" href="./Login.html">Log in here.</a></span>
       </div>
       <div class="container_img">
         <div class="img_backgroung">
@@ -79,5 +78,5 @@
       </div>
     </div>
   </body>
-  <script src="../js/Login.js"></script>
+  <script src="../js/Register.js"></script>
 </html>
