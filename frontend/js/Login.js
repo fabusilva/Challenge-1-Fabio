@@ -12,6 +12,8 @@ formulario.addEventListener('submit', (event) =>{
         msg.style.visibility = "visible";
         inputUser.style.border = "1px solid #e9b425"
         inputPassword.style.border = "1px solid #e9b425"
+    }else{
+        logar();
     }
     
 })
@@ -55,6 +57,26 @@ function checkPassword(){
         return false
     }else{
         return true
+    }
+}
+
+function logar(){
+    const key = inputUser.value
+    const password = inputPassword.value
+    var user
+    if(localStorage.getItem(key) === null){
+        msg.style.visibility = "visible";
+        inputUser.style.border = "1px solid #e9b425"
+    }else{
+        user = JSON.parse(localStorage.getItem(key));
+        console.log(user.password)
+        if(user.password === password){
+            window.location.href = "../pages/Home.html?city="+encodeURIComponent(JSON.stringify(user.city));
+            
+        }else{
+            msg.style.visibility = "visible";
+            inputPassword.style.border = "1px solid #e9b425"
+        }
     }
 }
 function mudarPage(){

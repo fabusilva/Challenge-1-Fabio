@@ -67,7 +67,6 @@ function checkSizePassword(){
 }
 function checkEmailSaved(){
     const key = email.value;
-    console.log(`Key localStorage: ${key}`)
     if(localStorage.getItem(key) === null){
         return false
     } else{
