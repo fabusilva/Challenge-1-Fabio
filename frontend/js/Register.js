@@ -67,7 +67,6 @@ function checkSizePassword(){
 }
 function checkEmailSaved(){
     const key = email.value;
-    console.log(`Key localStorage: ${key}`)
     if(localStorage.getItem(key) === null){
         return false
     } else{
@@ -87,5 +86,8 @@ function saveUser(){
     const usuario = {"fistname": fname, "lastname": lname, "birthdate": date, "country": ct, "city": cty, "email": e_mail, "password": pass, "password2": pass2};
     const key = e_mail;
     localStorage.setItem(key, JSON.stringify(usuario));
+    window.location.href = "../pages/Login.html";
+}
+function navegarLogin(){
     window.location.href = "../pages/Login.html";
 }

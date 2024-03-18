@@ -15,17 +15,17 @@
   <body>
     <nav class="home_navbar">
       <div class="logo_navbar">
-        <img src="../image/home/LogoCompasso 1.png" alt="logo" />
+        <img onclick="navegarLogin()" src="../image/home/LogoCompasso 1.png" alt="logo" />
       </div>
       <div class="relogio">
         <h1 class="hora"><span id="hora_atual">11</span><span>:</span><span id="min_atual">26</span></h1>
         <p class="data"><span id="dia_semana">terça-feira</span> <span id="dia_mes">17</span> de <span id="mes">março</span> de <span id="ano">2020</span></p>
       </div>
       <div class="tempo">
-        <p class="cidade">Passo fundo - RS</p>
+        <p id="cidade" class="cidade">Passo fundo - RS</p>
         <div class="temperatura">
           <img src="../image/home/icon/006-cloudy-1 1.svg" alt="nuvem" />
-          <h1 class="grau">22°</h1>
+          <h1 class="grau"><span id="grau">22</span>°</h1>
         </div>
       </div>
     </nav>
@@ -56,11 +56,11 @@
       <img src="../image/home/icon/linha.svg" alt="divisoria">
       <p class="text_two">Application <br />refresh in</p>
       <div class="aux">
-        <h2>600</h2>
+        <h2 id="contagem_regressiva">600</h2>
         <p>seconds</p>
       </div>
-      <button class="bt_cn">Continuar <br>navegando</button>
-      <button class="bt_logout">Logout</button>
+      <button onclick="navegarGoogle()" class="bt_cn">Continuar <br>navegando</button>
+      <button onclick="navegarLogin()" class="bt_logout">Logout</button>
     </footer>
   </body>
   <script src="../js/Home.js"></script>
