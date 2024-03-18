@@ -13,42 +13,35 @@
     <title>Login</title>
   </head>
   <body>
-    <div class="container_login">
-      <div class="form_login">
-        <div class="header_login">
-          <h1>Welcome,</h1>
-          <p>To continue browsing safely, log in to the <br />network.</p>
-        </div>
-        <div class="formulario">
+    <div class="container">
+      <div class="container_login">
+        <form id="formulario" class="formulario">
+          <div class="header_formulario">
+            <h1>Welcome,</h1>
+            <p>To continue browsing safely, log in to the <br />network.</p>
+          </div>
           <h3>Login</h3>
           <div class="use_name">
-            <input class="input_form" type="email" placeholder="use name" />
-            <img
-              class="icon"
-              src="../image/login/icon/icon-user.svg"
-              alt="icon use"
+            <input id="input_user" class="input_form" type="email" placeholder="use name"/>
+            <img id="icon_user" class="icon" src="../image/login/icon/icon-user.svg" alt="icon use"
             />
           </div>
           <div class="password">
-            <input class="input_form" type="password" placeholder="password" />
-            <img
-              class="icon"
-              src="../image/login/icon/icon-password.svg"
-              alt="icon password"
-            />
+            <input id="input_password" class="input_form" type="password" placeholder="password"/>
+            <img id="icon_password" class="icon" src="../image/login/icon/icon-password.svg" alt="icon password"/>
           </div>
-          <div class="message">
-              <p>Wow, invalid username or password.<br />Please, try again!</p>
+          <div id="message" class="message">
+            <p>Wow, invalid username or password.<br />Please, try again!</p>
           </div>
           <button class="button">Login in</button>
           <button class="button" onclick="mudarPage()">Register now</button>
-        </div>
+        </form>
       </div>
-      <div class="img_page">
-        <div class="pc_img">
+      <div class="container_img">
+        <div class="img_backgroung">
           <img src="../image/login/Mask Group.png" alt="background" />
         </div>
-        <div class="logo_img">
+        <div class="logo_uol">
           <img src="../image/login/Type=Colored negative.png" alt="logo" />
         </div>
       </div>

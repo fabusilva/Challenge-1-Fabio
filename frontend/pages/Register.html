@@ -13,53 +13,70 @@
     <title>Register</title>
   </head>
   <body>
-    <div class="register_body">
-      <div class = "container_register">
-        <div class="text_register">
-          <h1>Welcome,</h1>
-          <p>Please, register to continue</p>
-        </div>
-        <form class="form_register" action="">
-          <label for="fistname">first name</label>
-          <input id="fistname" type="text" placeholder="Your first name" />
-  
-          <label for="lastname">last name</label>
-          <input id="lastname" type="text" placeholder="Your last name" />
-  
-          <label for="birthdate">birth date</label>
-          <input id="birthdate" type="date" placeholder="MM/DD/YYYY" />
-  
-          <label for="country">Country</label>
-          <input id="country" type="text" placeholder="Your Country" />
-  
-          <label for="city">City</label>
-          <input id="city" type="text" placeholder="Your City" />
-  
-          <label for="e-mail">e-mail</label>
-          <input id="e-mail" type="email" placeholder="A valid e-mail here" />
-  
-          <label for="password">password</label>
-          <input id="password" type="password" placeholder="Your password" />
-  
-          <label for="password2">password</label>
-          <input
-            id="password2"
-            type="password"
-            placeholder="Comfirm your password"
-          />
-  
-          <button type="submit">Register Now</button>
-          <p>Already have an account? <a href="./Login.html">Log in here.</a></p>
+    <div class="container">
+      <div class="container_login">
+        <form id="formulario" class="formulario">
+          <div class="header_formulario">
+            <h1>Welcome,</h1>
+            <p>Please, register to continue</p>
+          </div>
+          <div class="input_container">
+            <label class="label_espacamento" for="fistname">first name</label>
+            <input id="fistname" type="text" placeholder="Your first name" />
+          </div>
+
+          <div class="input_container">
+            <label class="label_espacamento" for="lastname">last name</label>
+            <input id="lastname" type="text" placeholder="Your last name" />
+          </div>
+
+          <div class="input_container">
+            <label class="label_espacamento" for="birthdate">birth date</label>
+            <input id="birthdate" type="date" placeholder="MM/DD/YYYY" />
+          </div>
+          <div class="input_container">
+            <label class="label_espacamento2" for="country">Country</label>
+            <input id="country" type="text" placeholder="Your Country" />
+          </div>
+          <div class="input_container">
+            <label class="label_espacamento3" for="city">City</label>
+            <input id="city" type="text" placeholder="Your City" />
+          </div>
+
+          <div class="input_container">
+            <label class="label_espacamento4" for="e-mail">e-mail</label>
+            <input id="email" type="email" placeholder="A valid e-mail here" />
+          </div>
+
+          <div class="input_container">
+            <label class="label_espacamento" for="password">password</label>
+            <input id="password" type="password" placeholder="Your password" />
+          </div>
+
+          <div class="input_container">
+            <label class="label_espacamento" for="password2">password</label>
+            <input
+              id="password2"
+              type="password"
+              placeholder="Comfirm your password"
+            />
+          </div>
+          <div class="container_message">
+            <p id="erro_form" class="erro_msg">All form fields must be filled in</p>
+          </div>
+          <button class="bt_submit" type="submit">Register Now</button>
         </form>
+        <span class="text_message">Already have an account? <a class="text_link" href="./Login.html">Log in here.</a></span>
       </div>
-    </div>
-    <div class="img_register">
-      <div class="pc_img">
-        <img src="../image/login/Mask Group.png" alt="background" />
-      </div>
-      <div class="logo_img">
-        <img src="../image/login/Type=Colored negative.png" alt="logo" />
+      <div class="container_img">
+        <div class="img_backgroung">
+          <img src="../image/login/Mask Group.png" alt="background" />
+        </div>
+        <div class="logo_uol">
+          <img src="../image/login/Type=Colored negative.png" alt="logo" />
+        </div>
       </div>
     </div>
   </body>
+  <script src="../js/Register.js"></script>
 </html>

@@ -6,106 +6,131 @@
   font-family: "Mulish";
   font-weight: normal;
 }
-
 body {
-  background-image: linear-gradient(
-    to bottom,
-    #33383d,
-    #2d3136,
-    #272a2e,
-    #222327,
-    #1c1d20
-  );
-  height: 100vh;
+  width: 1920px;
+  height: 1080px;
+  background-image: linear-gradient(to bottom,#33383d,#2d3136,#272a2e,#222327,#1c1d20);
 }
-
-.container_login {
+.container {
   display: flex;
-  height: 100%;
+  
 }
-.form_login {
+.container_login {
   flex: 1;
 }
-
-.header_login {
+.formulario {
+  display: flex;
+  flex-direction: column;
+}
+.header_formulario {
+  flex-direction: column;
   margin-left: 287px;
   margin-top: 197px;
+  margin-bottom: 97px;
 }
-
-.header_login h1 {
+.header_formulario h1 {
   font-size: 60px;
 }
-
-.header_login p {
+.header_formulario p {
   margin-top: 18px;
   font-size: 16px;
 }
-
-.formulario {
-  margin-top: 135px;
-  margin-left: 287px;
-}
 .formulario h3 {
+  margin-left: 287px;
   font-size: 30px;
-  margin-bottom: 32px;
 }
-
 .input_form {
   height: 60px;
   width: 379px;
   border-radius: 50px;
   border: 1px solid rgba(255, 255, 255, 1);
   background: none;
-  margin-bottom: 33px;
+  margin-top: 33px;
   margin-right: 20px;
+  margin-left: 287px;
   padding-right: 20px;
   vertical-align: baseline;
   padding: 20px;
 }
+.input_icon_user {
+  height: 60px;
+  width: 379px;
+  border-radius: 50px;
+  border: 1px solid rgba(255, 255, 255, 1);
+  background: none;
+  margin-top: 33px;
+  margin-right: 20px;
+  margin-left: 287px;
+  padding-right: 20px;
+  vertical-align: baseline;
+  padding: 20px;
+  background-image: url("../image/login/icon/icon-user.svg");
+  background-repeat: no-repeat;
+  background-position: calc(100% - 10px) center;
+}
+.input_icon_password {
+  height: 60px;
+  width: 379px;
+  border-radius: 50px;
+  border: 1px solid rgba(255, 255, 255, 1);
+  background: none;
+  margin-top: 33px;
+  margin-right: 20px;
+  margin-left: 287px;
+  padding-right: 20px;
+  vertical-align: baseline;
+  padding: 20px;
+  background-image: url("../image/login/icon/icon-password.svg");
+  background-repeat: no-repeat;
+  background-position: calc(100% - 10px) center;
+}
 
-.use_name img{
-  height: 20px;
-  width: 20px;
-}
-.password img{
-  height: 25;
-  width: 20;
-}
-.message{
+.message {
   display: flex;
   align-items: center;
   margin-top: 15px;
+  margin-bottom: 48px;
+  margin-left: 333px;
+  visibility: hidden;
 }
-.formulario p{
+.message p {
   text-align: center;
-  color: #E9B425;
+  color: #e9b425;
 }
-.button{
-  background-image: linear-gradient(to top, #ff2d04, #ef2f0b, #e03110, #d03213, #c13216);
-  border: solid 2px linear-gradient(to top, #ff2d04, #ef2f0b, #e03110, #d03213, #c13216);
+.button {
+  background-image: linear-gradient(
+    to top,
+    #ff2d04,
+    #ef2f0b,
+    #e03110,
+    #d03213,
+    #c13216
+  );
+  border: solid 2px
+    linear-gradient(to top, #ff2d04, #ef2f0b, #e03110, #d03213, #c13216);
   width: 379px;
   height: 67px;
   border-radius: 50px;
   font-size: 32px;
   font-weight: 700;
   margin-bottom: 20px;
+  margin-left: 285px;
 }
-.img_page {
+.container_img {
   flex: 1;
 }
 
-.pc_img img {
+.img_backgroung img {
   max-width: 100%;
   max-height: 100%;
-  height: 100vh;
-  width: 100vw;
+  
 }
-.logo_img {
+.logo_uol {
   display: flex;
   align-items: flex-start;
   justify-content: center;
 }
-.logo_img img {
+.logo_uol img {
   position: absolute;
   top: 11px;
   height: 66px;

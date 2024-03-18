@@ -6,8 +6,12 @@
   font-family: "Mulish";
   font-weight: normal;
 }
-
+* a{
+  color: #f22e07;
+}
 body {
+  width: 1920px;
+  height: 1080px;
   background-image: linear-gradient(
     to bottom,
     #33383d,
@@ -16,24 +20,119 @@ body {
     #222327,
     #1c1d20
   );
+}
+.container {
   display: flex;
 }
-
-.register_body {
-  display: flex;
-  height: 100%;
-}
-
-.container_register {
+.container_login {
   flex: 1;
-  
 }
-.form_register{
+.formulario {
   display: flex;
   flex-direction: column;
-  justify-content: center;
-  align-items: center;
+  margin-left: 296px;
+  margin-top: 94px;
 }
-.img_register {
+.header_formulario {
+  flex-direction: column;
+  margin-bottom: 73px;
+}
+.header_formulario h1 {
+  font-size: 60px;
+}
+.header_formulario p {
+  font-size: 16px;
+}
+
+.input_container {
+  margin-bottom: 18px;
+}
+.input_container label {
+  font-size: 16px;
+}
+.label_espacamento {
+  margin-right: 18px;
+}
+.label_espacamento2 {
+  margin-right: 31px;
+}
+.label_espacamento3 {
+  margin-right: 61px;
+}
+.label_espacamento4 {
+  margin-right: 45px;
+}
+.input_container input {
+  height: 60px;
+  width: 379px;
+  border-radius: 50px;
+  font-size: 12px;
+  background: rgba(38, 41, 44, 1);
+  padding-left: 25px;
+  padding-top: 23px;
+  padding-bottom: 22px;
+  color: rgba(224, 224, 224, 1);
+  border: #ffffff solid 1px;
+}
+.bt_submit {
+  margin-top: 68px;
+  margin-bottom: 4px;
+  margin-left: 37px;
+  width: 379px;
+  height: 67px;
+  border-radius: 50px;
+  font-size: 32px;
+  font-weight: 700;
+  background: linear-gradient(
+    to top,
+    #ff2d04,
+    #ef2f0b,
+    #e03110,
+    #d03213,
+    #c13216
+  );
+  border: solid 1px
+    linear-gradient(to top, #ff2d04, #ef2f0b, #e03110, #d03213, #c13216);
+}
+.container_message{
+  margin-left: 100px;
+}
+.erro_msg{
+  color: rgba(242, 46, 7, 1);
+  font-size: 20px;
+  font-weight: 700;
+  visibility: hidden;
+}
+.text_message {
+  margin-left: 378px;
+  color: rgba(242, 46, 7, 1);
+  font-size: 16px;
+  font-weight: 700;
+  
+}
+.text_link {
+  color: #f22e07;
+  text-decoration: none;
+  font-size: 16px;
+  font-weight: bolder;
+  
+}
+.container_img {
   flex: 1;
+}
+
+.img_backgroung img {
+  max-width: 100%;
+  max-height: 100%;
+}
+.logo_uol {
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+}
+.logo_uol img {
+  position: absolute;
+  top: 11px;
+  height: 66px;
+  width: 484px;
 }
