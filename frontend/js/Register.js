@@ -88,3 +88,6 @@ function saveUser(){
     localStorage.setItem(key, JSON.stringify(usuario));
     window.location.href = "../pages/Login.html";
 }
+function navegarLogin(){
+    window.location.href = "../pages/Login.html";
+}

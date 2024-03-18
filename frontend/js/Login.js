@@ -82,3 +82,6 @@ function logar(){
 function mudarPage(){
     window.location.href = "../pages/Register.html";
 }
+function navegarLogin(){
+    window.location.href = "../pages/Login.html";
+}
